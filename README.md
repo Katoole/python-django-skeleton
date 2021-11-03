@@ -1,2 +1,6 @@
 # python-django-skeleton
-python django skeleton
+
+파이썬 + 장고 스켈레톤 프로젝트
+
+```
+$ python3 manage.py runserver
