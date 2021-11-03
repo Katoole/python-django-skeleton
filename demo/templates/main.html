@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+{% for d in datas %}
+    <tr>
+        <td>{{d.code}}</td>
+        <td>{{d.created}}</td>
+        <td>{{d.updated}}</td>
+        <td>{{d.created_user}}</td>
+        <td>{{d.updated_user}}</td>
+        <td>{{d.deleted_flag}}</td>
+        <td>{{d.used_flag}}</td>
+        <td>{{d.name}}</td>
+    </tr>
+{% endfor %}
+</table>
+
+</body>
+</html>

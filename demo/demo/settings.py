@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-eudvy*y_n=c06lk$w%&2wz3@7_d(p8c+@iu@j(80tc5y1=ncg)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -54,7 +54,7 @@ ROOT_URLCONF = 'demo.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'demo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'fs_conects',
+        'USER': 'stconects',
+        'PASSWORD': 'stconects!@#',
+        'HOST': 'rds-dangi-conects-qa.cluster-ro-cqhn8loawgfg.ap-northeast-2.rds.amazonaws.com',
+        'PORT': '13000	',
     }
 }
 
