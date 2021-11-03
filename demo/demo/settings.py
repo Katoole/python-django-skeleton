@@ -76,11 +76,11 @@ WSGI_APPLICATION = 'demo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'fs_conects',
-        'USER': 'stconects',
-        'PASSWORD': 'stconects!@#',
-        'HOST': 'rds-dangi-conects-qa.cluster-ro-cqhn8loawgfg.ap-northeast-2.rds.amazonaws.com',
-        'PORT': '13000	',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': '',
     }
 }
 
